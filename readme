@@ -1,0 +1,19 @@
+express -e ./
+//用express生成模板 -e代表ejs模板
+
+http://localhost:3000/?xss=<script>alert("ni hao")</script>
+
+这样的xss脚本会本浏览器拦截掉，火狐和IE不拦截
+
+http://localhost:3000/?xss=<iframe src="https://www.baidu.com/"></iframe>
+
+
+
+
+
+
+
+
+
+
+
